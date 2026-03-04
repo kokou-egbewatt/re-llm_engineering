@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Refactored CI workflows to ensure `tag_on_merge` runs even if `test` is skipped.
+- Refactored CI workflows so that `tag_on_merge` runs when the `test` job is skipped.
 - Updated `docs/local_setup.md` with clearer virtual environment setup instructions.
 
 ## [0.0.0] Barebones - 2024-06-01
