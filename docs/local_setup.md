@@ -1,6 +1,7 @@
 # Local Environment Setup
 
-This guide will help you set up your local development environment for the re-llm_engineering project.
+This guide will help you set up your local development environment for the
+re-llm_engineering project.
 
 ## Prerequisites
 
@@ -11,7 +12,8 @@ This guide will help you set up your local development environment for the re-ll
 
 If you haven't set up uv, see the [uv installation guide](https://github.com/astral-sh/uv#installation).
 
-To initialize the repository and install all dependencies from the frozen lock file, run:
+To initialize the repository and install all dependencies from the frozen lock
+file, run:
 
 ```bash
 uv sync --frozen
@@ -19,7 +21,8 @@ uv sync --frozen
 
 ## Set Up Environment Variables
 
-Create a `.env` file in the project root based off the `.env.example` file and add your API keys:
+Create a `.env` file in the project root based off the `.env.example` file and
+add your API keys:
 
 ```bash
 cp .env.example .env
