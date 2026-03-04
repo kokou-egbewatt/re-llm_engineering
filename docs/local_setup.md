@@ -19,6 +19,22 @@ file, run:
 uv sync --frozen
 ```
 
+## Setting Up the Virtual Environment
+
+Follow these steps to set up the virtual environment for the project:
+
+1. **Create the virtual environment**
+
+   ```bash
+   uv venv --python 3.12.12
+   ```
+
+2. **Activate the virtual environment** (optional but useful):
+
+   ```bash
+   source .venv/Scripts/Activate
+   ```
+
 ## Set Up Environment Variables
 
 Create a `.env` file in the project root based off the `.env.example` file and
