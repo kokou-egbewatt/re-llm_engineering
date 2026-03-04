@@ -1,6 +1,6 @@
 [project]
 name = "re-llm-engineering"
-version = "0.0.0"
+version = "0.1.0"
 description = "A collection of study resources and best practices for LLM engineering."
 readme = "README.md"
 requires-python = ">=3.12.12"
