@@ -22,11 +22,12 @@ on:
       - 'concepts/**'
 
 permissions:
-  contents: read
+  contents: write
   pull-requests: read
 
 jobs:
   version_check:
+    if: github.event_name == 'pull_request'
     name: Version Consistency
     runs-on: ubuntu-latest
     steps:
@@ -121,8 +122,8 @@ jobs:
   tag_on_merge:
     name: Tag with Current Version
     runs-on: ubuntu-latest
-    needs: test
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: [test]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && needs.test.result == 'skipped'
     steps:
       - name: Checkout main branch
         uses: actions/checkout@v4

@@ -5,7 +5,7 @@
 <br>
 <!-- Version Badge - update on release (must match CHANGELOG.md) -->
 <a href="https://github.com/kokou-egbewatt/re-llm_engineering/tags">
-    <img src="https://img.shields.io/badge/version-0.0.0-blue" alt="Version">
+    <img src="https://img.shields.io/github/v/tag/kokou-egbewatt/re-llm_engineering?label=version" alt="Version">
 </a>
 </h1>
 <p align="center">
@@ -57,3 +57,11 @@ hands-on, practical aspects of working with large language models—from API
 integration and prompt engineering to fine-tuning, deployment, and beyond. For
 prerequisites and full local setup instructions, see
 [docs/local_setup.md](docs/local_setup.md).
+
+## Topics Covered
+
+- [Chat Completions](concepts/chat-completions/readme.md) - The core API pattern for sending instructions and receiving generated text.
+
+References:
+
+- [Ed-Donner LLM Engineering Course](https://www.udemy.com/course/llm-engineering-master-ai-and-large-language-models/)
