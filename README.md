@@ -3,7 +3,7 @@
 
 <h1 align="center">LLM Engineering
 <br>
-<!-- Version Badge - update on release (must match Changelog.md) -->
+<!-- Version Badge - update on release (must match CHANGELOG.md) -->
 <a href="https://github.com/kokou-egbewatt/re-llm_engineering/tags">
     <img src="https://img.shields.io/badge/version-0.0.0-blue" alt="Version">
 </a>
