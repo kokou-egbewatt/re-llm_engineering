@@ -109,18 +109,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: tj-actions/changed-files@v47
-        id: changed-files
-        with:
-          files: '**/*.md'
-          separator: ","
-      - uses: DavidAnson/markdownlint-cli2-action@v22
-        if: steps.changed-files.outputs.any_changed == 'true'
+      - name: Lint markdown files
+        uses: DavidAnson/markdownlint-cli2-action@v15
         with:
           globs: |
-            ${{ steps.changed-files.outputs.all_changed_files }}
-            !github/**/*.md
-          separator: ","
+            'docs/*.md'
+            README.md
+            'examples/**/*.md'
 
   ci_status:
     name: CI Status Check
