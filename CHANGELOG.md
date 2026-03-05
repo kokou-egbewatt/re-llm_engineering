@@ -6,6 +6,17 @@ All notable changes to `re-llm_engineering` will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] Tokenization and Stateless Memory - 2026-03-05
+
+### Added
+
+- Tokenization and stateless memory exploration notebook under `concepts/tokens-memory/`:
+  - Demonstrates encoding/decoding text to token IDs with `tiktoken`
+  - Multi-turn chat loop with manual conversation history and live token count before each OpenAI API call
+  - Loads API key from `.env` (never hardcoded)
+  - Prints warnings as context window limit is approached; documents behavior when limit is exceeded
+  - Gradio UIs for token-aware chatbot and token inspector
+
 ## [0.1.0] Chat Completions - 2026-03-04
 
 ### Added
