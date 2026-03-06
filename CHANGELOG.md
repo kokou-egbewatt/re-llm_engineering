@@ -6,6 +6,16 @@ All notable changes to `re-llm_engineering` will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] Tool Calling - 2026-03-05
+
+### Added
+
+- A notebook exploring tool calling with function dispatch, including:
+  - Defining tools with JSON schema
+  - Detecting `finish_reason == "tool_calls"` and parsing arguments
+  - Looping until the model returns `finish_reason == "stop"`
+  - Using a SQLite DB as a real data source (e.g. price lookup)
+
 ## [0.2.0] Tokenization and Stateless Memory - 2026-03-05
 
 ### Added

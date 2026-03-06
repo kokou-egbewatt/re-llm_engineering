@@ -61,6 +61,8 @@ prerequisites and full local setup instructions, see
 ## Topics Covered
 
 - [Chat Completions](concepts/chat-completions/readme.md) - The core API pattern for sending instructions and receiving generated text.
+- [Tokens and Memory](concepts/tokens-memory/readme.md) - Understanding how text is tokenized, managing conversation history, and working within context window limits.
+- [Tool Calling](concepts/tool-calling/readme.md) - Building systems where LLMs can call external functions or APIs to complete tasks.
 
 References:
 
